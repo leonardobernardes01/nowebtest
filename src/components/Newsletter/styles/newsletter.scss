@@ -1,0 +1,61 @@
+.newsletter {
+  position: relative;
+  margin-top: 6.625rem;
+
+  &_background {
+    &Block {
+      text-align: center;
+      height: 23.8125rem;
+    }
+  }
+
+  &_content {
+    position: absolute;
+    bottom: -0.4375rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: end;
+    gap: 1.375rem;
+  }
+
+  &_banners {
+    &-svg {
+      position: absolute;
+      left: -8.125rem;
+      top: 50%;
+      transform: translateY(-40%);
+      z-index: 1;
+    }
+
+    &-img {
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  &_link {
+    border-radius: 0.9375rem;
+    background: #fbaf17;
+    width: 22.5rem;
+    height: 3.9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #202332;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.375rem;
+    letter-spacing: -0.0338rem;
+    text-transform: uppercase;
+    margin-bottom: 4.6875rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

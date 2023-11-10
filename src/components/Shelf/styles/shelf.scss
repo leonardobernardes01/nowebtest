@@ -1,0 +1,178 @@
+.shelf {
+  text-align: center;
+  padding-top: 20.5rem;
+  position: relative;
+  width: 81.25rem;
+  margin: 2.6875rem auto 3.75rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67.0625rem;
+    height: 28.5rem;
+    border-radius: 0rem 0.9375rem 0rem 0rem;
+    background: #202332;
+    z-index: 1;
+  }
+
+  &_svgOne {
+    position: absolute;
+    right: 2.5625rem;
+    top: 1.625rem;
+    z-index: 0;
+  }
+
+  &_svgTwo {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 20.75rem;
+  }
+
+  &_content {
+    position: relative;
+    z-index: 3;
+    margin-top: -4.9375rem;
+  }
+
+  &_title {
+    color: #fff;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0656rem;
+    text-transform: uppercase;
+  }
+
+  &_products {
+    &-item {
+      width: 16.4375rem;
+      height: 28.125rem;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2.3125rem;
+      flex-direction: column;
+      border-radius: 0.9375rem;
+      background: #fff;
+      box-shadow: 0rem 0rem 0.625rem 0rem rgba(0, 0, 0, 0.15);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &-image {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 217px;
+        height: 19px;
+        border-radius: 15px;
+        background: #202332;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -0.1563rem;
+      }
+    }
+
+    &-list {
+      width: fit-content;
+      margin: auto;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1.875rem;
+    }
+
+    &-flag {
+      position: absolute;
+      top: 0.9375rem;
+      border-radius: 0rem 3.875rem 3.875rem 0rem;
+      background: #e0e0e0;
+      padding: 0 1rem;
+      color: #333;
+      font-size: 0.8125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.0625rem;
+      height: 1.5rem;
+      letter-spacing: -0.0244rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &-name {
+      color: #333;
+      text-align: center;
+      font-size: 1.4375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.75rem;
+      letter-spacing: -0.0719rem;
+      width: 13.1875rem;
+      height: 3.375rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-prices {
+      display: flex;
+      justify-content: right;
+      gap: 0.8125rem;
+      height: 3.4375rem;
+      align-items: center;
+
+      p {
+        margin: 0;
+        color: #333;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.375rem;
+        letter-spacing: -0.6px;
+      }
+    }
+
+    &-listPrice {
+      text-decoration: line-through;
+    }
+
+    &-price {
+      width: 9rem;
+      height: 3.1875rem;
+      border-radius: 0.9375rem 0rem 0rem 0.9375rem;
+      background: #fbaf17;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-installment {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      margin: 0;
+      width: 13.9375rem;
+      height: 2.625rem;
+      border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      text-align: center;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.375rem;
+      letter-spacing: -0.48px;
+    }
+  }
+}

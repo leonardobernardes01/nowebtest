@@ -1,0 +1,166 @@
+.fullbanner {
+  position: relative;
+
+  &_img {
+    &Block {
+      text-align: center;
+    }
+  }
+
+  &_infos {
+    position: absolute;
+    width: 30.625rem;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-115%);
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      color: #fff;
+      font-size: 4.375rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.4375rem;
+      text-transform: uppercase;
+      width: 26.25rem;
+      margin: 0 0 1rem;
+    }
+
+    &-description {
+      color: #fff;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.375rem; /* 211.111% */
+      letter-spacing: -0.0338rem;
+      margin: 0 0 1.375rem;
+    }
+
+    &-button {
+      &Products {
+        width: 22.5rem;
+        height: 3.9375rem;
+        border-radius: 0.9375rem;
+        background: #fbaf17;
+        color: #202332;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.375rem;
+        letter-spacing: -0.0338rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.4375rem;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      &About {
+        border-radius: 0.9375rem;
+        border: 0.0625rem solid #fff;
+        width: 22.5rem;
+        height: 3.9375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.375rem;
+        letter-spacing: -0.0338rem;
+        text-transform: uppercase;
+        transition: 0.2s ease-in-out;
+        margin-bottom: 2.5rem;
+
+        &:hover {
+          color: #fbaf17;
+          border: 0.0625rem solid #fbaf17;
+        }
+      }
+    }
+
+    &-scroll {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.9375rem;
+      background: transparent;
+      color: #fff;
+      border: none;
+      outline: none;
+      padding: 0;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  &_image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(40%);
+  }
+
+  &_person {
+    position: absolute;
+    bottom: 0.4375rem;
+    z-index: 2;
+  }
+
+  &_product {
+    position: absolute;
+    bottom: 8.6875rem;
+    left: -11.875rem;
+    z-index: 3;
+
+    &-tag {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      background: #fff;
+      border: 0.5rem solid #fbaf17;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6.25rem;
+      width: 3.5625rem;
+      height: 3.5625rem;
+    }
+  }
+
+  &_ratings {
+    position: absolute;
+    width: 17.9375rem;
+    height: 5.1875rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9375rem;
+    box-shadow: 0rem 0rem 1.875rem 0rem rgba(0, 0, 0, 0.25);
+    bottom: 5.625rem;
+    left: 9.375rem;
+    z-index: 3;
+  }
+
+  &_svgOne {
+    position: absolute;
+    right: -18.75rem;
+    top: -20.25rem;
+    z-index: 1;
+  }
+}
